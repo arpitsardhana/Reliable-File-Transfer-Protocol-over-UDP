@@ -1,4 +1,4 @@
-# Copyright (c) 2015 All Right Reserved,Ipshita Singha Roy(ipshita.singharoy@stonybrook.edu),Arpit Singh(arpsingh@cs.stonybrook.edu)
+# Copyright (c) 2015 All Right Reserved,Arpit Singh(arpsingh@cs.stonybrook.edu),Ipshita Singha Roy(ipshita.singharoy@stonybrook.edu)
 # Reliable File Transfer over UDP is free program: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -10,8 +10,8 @@
 # GNU General Public License for more details.
 # for terms and conditions see, see <http://www.gnu.org/licenses/>.
 
-Created By              :               Ipshita Singha Roy,Arpit Singh
-Student Id              :               Ipshita Singha Roy (110284325),Arpit Singh(110162005)
+Created By              :               Arpit Singh,Ipshita Singha Roy
+Student Id              :               Arpit Singh(110162005),Ipshita Singha Roy (110284325)
 Date                    :               27 October 2015
 File Type               :               README
 Summary                 :               Aim of this project is to design a reliable File transfer protocol over UDP using TCP like relibillity features. Client requests a filename from server, and server return the contents of file. Client subsequenty prints file contents as it receives it. Client is multithreaded program with one thread reading data from server and other thread printing data on screen. Structures used by both thread are locked and synchronized using Mutexes. Server runs infinitely on well known port and on arrival of client request forks off child to interact with client.Features implemented at server end includes flow control, congestion control,slow start,congestion avoidance and fast retransmit. Server also keeps track of all interfaces attached to it.Client can create socket on any of its address.
